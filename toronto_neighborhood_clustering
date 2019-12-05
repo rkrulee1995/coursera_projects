@@ -45,3 +45,14 @@ final_df.columns
 
 #get shape 
 final_df.shape
+
+#read in geospatial_data
+a = pd.read_csv('https://cocl.us/Geospatial_data')
+gdf = pd.DataFrame(a)
+print(gdf.head())
+print(final_df.head())
+
+new_df = final_df.merge(gdf,
+                        left_on = 'Postcode',
+                       right_on = 'Postal Code')
+new_df.drop(columns=['Postal Code'], inplace=True)
