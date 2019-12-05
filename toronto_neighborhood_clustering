@@ -42,3 +42,6 @@ print(final_df.head())
 final_df = final_df[~final_df['Borough'].isin(['Not-assigned'])]
 print(final_df)
 final_df.columns
+
+#get shape 
+final_df.shape
