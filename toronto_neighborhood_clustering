@@ -1,1 +1,41 @@
-print("hello world")
+import pandas as pd
+import requests
+import bs4
+from bs4 import BeautifulSoup
+website_url = requests.get("https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M").text
+
+soup = BeautifulSoup(website_url,"html")
+#print(soup.prettify())
+table = soup.find_all("table")
+#print(table)
+contentTable = soup.find("table",{"class":"wikitable sortable"})
+rows = contentTable.find_all('tr')
+df = []
+df_1 = []
+df_2 = []
+for row in rows:
+    x = row.get_text()
+    x = x.replace(" ","-")
+    x = x.split()
+
+    postcode = x[0]
+    borough = x[1]
+    neighborhood = x[2]
+    df.append(postcode)
+    df_1.append(borough)
+    df_2.append(neighborhood)
+    #assign tables to columns
+final_df = pd.DataFrame()
+final_df['postcode'] = df
+final_df['borough'] = df_1
+final_df['neighborhood'] = df_2
+print(final_df.head()) 
+
+new_header = final_df.iloc[0] #grab the first row for the header
+final_df = final_df[1:] #take the data less the header row
+final_df.columns = new_header #set the header row as the df header
+print(final_df.head())
+
+final_df = final_df[~final_df['Borough'].isin(['Not-assigned'])]
+print(final_df)
+final_df.columns
