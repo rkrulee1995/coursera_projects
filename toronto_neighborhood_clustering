@@ -14,11 +14,12 @@ df = []
 df_1 = []
 df_2 = []
 for row in rows:
-    x = row.get_text()
-    x = x.replace(" ","-")
-    x = x.split()
+    x = row.get_text() #grabs body of text
+    x = x.replace(" ","-") #replaces spaces where bor/neigh have more than one string with '-'
+    x = x.split() #split strings
 
-    postcode = x[0]
+    #assign indexed values to specific elements
+    postcode = x[0] 
     borough = x[1]
     neighborhood = x[2]
     df.append(postcode)
@@ -31,11 +32,13 @@ final_df['borough'] = df_1
 final_df['neighborhood'] = df_2
 print(final_df.head()) 
 
+#take first row of df and make column headers
 new_header = final_df.iloc[0] #grab the first row for the header
 final_df = final_df[1:] #take the data less the header row
 final_df.columns = new_header #set the header row as the df header
 print(final_df.head())
-
+   
+#drop the unassigned entries
 final_df = final_df[~final_df['Borough'].isin(['Not-assigned'])]
 print(final_df)
 final_df.columns
