@@ -7,14 +7,16 @@
    or  how can the lines be redrawn to encompass smaller ethinic communities.
    
    BACKGROUND:
-   International companies offend open branches and hubs in populous US cities. NYC serves as a financial capital of the world
-   and is home to many popular fashion and jewlrey companies. When picking locations, internationl companies feel at home imbracing,
+   The main utilizer of the information I will reserach and present will be international financial companies looking to set up an NYC office. 
+   
+   International companies often open branches and hubs in populous US cities. NYC serves as a financial capital of the world
+   and is home to many popular fashion,jewlrey, and tech companies. When picking locations, internationl companies feel at home imbracing,
    the new culture of the city they will inhabit, but often require personal connections (langauge barrier, home knowledge) to get this
    new branch off the ground. 
    
   The viability of this question is a potential appeal to outside international investors looking to build business's in NYC and 
-  need to find a pontential workforce with knowledge of their origin country. This project will help evaluate and sketch out
-  distinct areas where different ethnic groups live and eat and use this as a proxy to determine where these groups live. 
+  need to find a pontential workforce with knowledge of their origin country, and speak the native language. This project will help evaluate and sketch out
+  distinct areas where different ethnic groups live and eat and use this as a proxy to determine where these groups live, and where to set up a local to hire and recruit a specific ethnic class. 
   
 2. A description of the data and how it will be used to solve the problem.
   Four square api data I will use will include,
@@ -30,4 +32,4 @@
   which may act a good represenation of those who live in said communities. (EI. in harlem we see a variety of Africans' resturants which 
   helps determine that there is a large African population that lives and supports this community. This could be valuable information
   for a company in Africa looking to put down roots in NYC, and require a native population for both language barrier,
-  and knowledge of international markets. 
+  and knowledge of international market). Additionally, for a arabic tech company looking to build a branch in manhattan, knowing that a large arabic population (determined from arab restuarant densities) would provide a great knowledge that a workforce that speaks their native language lives in a specific part of the city. 
