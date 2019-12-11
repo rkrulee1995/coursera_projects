@@ -27,7 +27,7 @@
     a. name
     b. location
 
-  I will use four square api to show restuarants density by ethinic cuisine with given latitutes and longitudes. This will allow
+  I will use four square api to show restuarants density by ethinic cuisine with given latitutes and longitudes. I will develop locate based on denisty where the highest number of speciic ethnic cuisine exists, a recommend this as the neighborhood, for new internaltion investors.  This will allow
   me to describe which neighborhoods contains which densities of various resturants. I will use this as a proxy to define ethnic groups
   which may act a good represenation of those who live in said communities. (EI. in harlem we see a variety of Africans' resturants which 
   helps determine that there is a large African population that lives and supports this community. This could be valuable information
