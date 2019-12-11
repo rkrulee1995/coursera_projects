@@ -1,6 +1,6 @@
 1. A description of the problem and a discussion of the background
   QUESTION:
-  In my project I would like to analyse restuarants type by country in NYC. My principle question is,
+  In my project I would like to analyse restuarants type by NYC Neighborhood. My principle question is,
   what are the ethnically diverse neighborhoods in NYC, (outside of the traditional ones we are familiar with, china town, ktwon)
   and how prevalent are their own restuarants seen in these neighboorhood,
   (EI how many italian restuarants exist in Little italy, or what are the dominant restuarants seen in harlem), 
